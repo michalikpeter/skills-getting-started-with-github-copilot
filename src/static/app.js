@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spotsLeft = details.max_participants - details.participants.length;
 
-// Generate participants list
+        // Generate participants list
         const participantsList = details.participants.length
           ? `<ul>${details.participants.map(participant => `<li>${participant}</li>`).join("")}</ul>`
           : "<p>No participants yet.</p>";
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${details.description}</p>
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
-<div>
+          <div>
             <strong>Participants:</strong>
             ${participantsList}
           </div>
